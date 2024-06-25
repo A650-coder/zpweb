@@ -1,0 +1,128 @@
+<!-- Chief Executive Officer -->
+<div *ngIf="userRole === 'admin'">
+  <ul class="sidebar">
+    <li>
+      <a routerLink="/admindash" routerLinkActive="active">
+        <span class="material-symbols-outlined">dashboard</span>Dashboard
+      </a>
+    </li>
+    <li>
+      <a routerLink="/form" routerLinkActive="active">
+        <span class="material-symbols-outlined">description</span>नसती तयार करा
+      </a>
+    </li>
+    <li>
+      <a routerLink="/trackfile" routerLinkActive="active">
+        <span class="material-symbols-outlined">query_stats</span>नस्ती ट्रॅक करा
+      </a>
+    </li>
+    <li>
+      <a routerLink="/master" routerLinkActive="active">
+        <span class="material-symbols-outlined">group</span>Master
+      </a>
+    </li>
+    <li>
+      <a routerLink="/ahwalform" routerLinkActive="active">
+        <span class="material-symbols-outlined">description</span>अहवल
+      </a>
+    </li>
+    <li>
+      <a routerLink="/changpss" routerLinkActive="active">
+        <span class="material-symbols-outlined">password</span>Change Password
+      </a>
+    </li>
+    <li>
+      <a (click)="logout()">
+        <span class="material-symbols-outlined">power_settings_new</span>Logout
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- HOD Dept.
+<div *ngIf="userRole === 'hod'">
+  <ul class="sidebar">
+    <li>
+      <a routerLink="/admindash" routerLinkActive="active">
+        <span class="material-symbols-outlined">dashboard</span>Dashboard
+      </a>
+    </li>
+    <li>
+      <a routerLink="/ahwalform" routerLinkActive="active">
+        <span class="material-symbols-outlined">description</span>अहवल
+      </a>
+    </li>
+    <li>
+      <a routerLink="/form" routerLinkActive="active">
+        <span class="material-symbols-outlined">description</span>नसती तयार करा
+      </a>
+    </li>
+    <li>
+      <a routerLink="/changpss" routerLinkActive="active">
+        <span class="material-symbols-outlined">password</span>Change Password
+      </a>
+    </li>
+    <li>
+      <a (click)="logout()">
+        <span class="material-symbols-outlined">power_settings_new</span>Logout
+      </a>
+    </li>
+  </ul>
+</div> -->
+
+<!-- SO dashboard -->
+<div *ngIf="userRole === 'so'">
+  <ul class="sidebar">
+    <li>
+      <a routerLink="/admindash" routerLinkActive="active">
+        <span class="material-symbols-outlined">dashboard</span>Dashboard
+      </a>
+    </li>
+    <li>
+      <a routerLink="/ahwalform" routerLinkActive="active">
+        <span class="material-symbols-outlined">description</span>अहवल
+      </a>
+    </li>
+    <li>
+      <a routerLink="/master" routerLinkActive="active">
+        <span class="material-symbols-outlined">group</span>Master
+      </a>
+    </li>
+    <li>
+      <a routerLink="/form" routerLinkActive="active">
+        <span class="material-symbols-outlined">description</span>नसती तयार करा
+      </a>
+    </li>
+    <li>
+      <a (click)="logout()">
+        <span class="material-symbols-outlined">power_settings_new</span>Logout
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- Employee dashboard -->
+<div *ngIf="userRole === 'emp'">
+  <ul class="sidebar">
+    <li>
+      <a routerLink="/admindash" routerLinkActive="active">
+        <span class="material-symbols-outlined">dashboard</span>Dashboard
+      </a>
+    </li>
+    <li>
+      <a routerLink="/form" routerLinkActive="active">
+        <span class="material-symbols-outlined">description</span>नसती तयार करा
+      </a>
+    </li>
+    <li>
+      <a routerLink="/ahwalform" routerLinkActive="active">
+        <span class="material-symbols-outlined">description</span>अहवल
+      </a>
+    </li>
+    <li>
+      <a (click)="logout()">
+        <span class="material-symbols-outlined">power_settings_new</span>Logout
+      </a>
+    </li>
+  </ul>
+</div>

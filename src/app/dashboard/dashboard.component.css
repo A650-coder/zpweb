@@ -1,0 +1,110 @@
+
+
+.dashboard {
+    /* background:red ; */
+    display: flex ;
+    flex-direction: column ;
+      margin-left: 100px;
+      /* Adjust based on the sidebar width */
+      padding: 10px;
+    }
+    
+    .dashboard {
+      margin-top: 50px;
+      margin-left: 220px;
+      /* Adjust based on the sidebar width */
+      padding: 10px;
+    }
+    
+    .dashboard-container {
+      margin-top: 10px;
+      /* margin-right: 50px;
+      width: 80%; */
+      border-color: 1px solid black;
+      float: right;
+      background-color: #00bcd4;
+      padding: 3px;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+    }
+    
+    .dashboard-header {
+      margin-bottom: 20px;
+    }
+    
+    .dashboard-body {
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .dashboard-item {
+      flex: 1;
+      margin: 0 10px;
+    }
+    
+    .dashboard-item h3 {
+      margin: 0;
+    }
+    
+    .dashboard-item p {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      margin-top: 10px;
+      margin: 10px auto 10px auto ;
+      flex-direction: row;
+      /* // width: 40%; */
+     flex-wrap: wrap;
+      justify-content: space-between;
+    
+    }
+    
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    
+    /* .indicator {
+      background-color: red;
+      border-radius: 50%;
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+    } */
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th,
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    
+    .ds-b {
+    /* background: green ; */
+    display: flex;
+    padding: 3px;
+    margin: 10px 0px;
+    }

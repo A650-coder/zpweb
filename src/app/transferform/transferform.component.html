@@ -1,0 +1,123 @@
+
+<div class="container">
+    <h4><b>नस्ती पुढे पाठवा</b></h4>
+    <form [formGroup]="transferForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+    <div class="col">
+        <div class="form-group">
+            <label class ="form-label">नस्ती क्रमांक. </label>
+            <input type="text" id="fileno" formControlName="fileno" class="form-control">
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="form-group">
+          <label class="form-label">कोणाकडून आले निवडा</label>
+          <input type="text" id="fromWhom" class="form-control" formControlName="fromWhom">   
+        </div>
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="form-group">
+            <label class ="form-label">तारीख</label>
+            <input type="date" id="date" formControlName="date" class="form-control">
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="form-group">
+          <label class ="form-label">अंतिम तारीख</label>
+          <input type="date" id="fromDate" class="form-control" formControlName="fromDate">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="form-group">
+          <label class ="form-label">विभाग</label>
+          <select type="text" id="vibhag" class="form-control" formControlName="vibhag">
+            <option value=""></option>
+            <option value="">सामान्य प्रशासन विभाग</option>
+            <option value="">अर्थ विभाग</option>
+            <option value="">ग्रामपंचायत विभाग</option>
+         <option value="">शिक्षण (प्राथमिक) विभाग</option>
+         <option value="">आरोग्य विभाग</option>
+         <option value="">समाज कल्याण विभाग</option>
+         <option value="">बांधकाम विभाग</option>
+         <option value="">ग्रामिण पाणी पुरवठा विभाग</option>
+         <option value="">कृषी विभाग</option>
+         <option value="">पशुसंवर्धन विभाग</option>
+         <option value="">महिला व बाल विकास विभाग</option>
+         <option value="">शिक्षण (माध्यमिक) विभाग</option>
+         <option value="">जिल्हा ग्रामिण विकास यंत्रणा</option>
+         <option value="">पाणी व स्वच्छता विभाग</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col">
+    <div class="form-group">
+        <label class ="form-label">प्रकार</label>
+        <select id="type" formControlName="type" class="form-control">
+        <option value="सामान्य">सामान्य</option>
+       <option value="तत्काळ">तत्काळ</option>
+       <option value="अतितात्काळ">अतितात्काळ</option>
+     </select>
+    </div>
+    </div>
+</div>
+<div class="row">    
+     <div class="col">
+        <div class="form-group">
+            <label class ="form-label">विषय</label>
+            <input type="text" id="subject" formControlName="subject" class="form-control">
+        </div>
+     </div>
+     <div class="col">
+        <div class="form-group">
+          <label class ="form-label">कर्मचारी</label>
+          <select type="text" id="karmachari" class="form-control" formControlName="karmachari" placeholder="कोणाकडून आले निवडा">
+            <option value=""></option>
+            <option value="">श्री. संतोष पाटील, भा.प्र.से.</option>
+            </select>
+        </div>
+    </div>
+        </div>
+        <div class="row">
+           
+                <div class="form-group">
+                <label class ="form-label">नस्ती सादर करण्याचे कारण(उदा.तांत्रिक मान्यता,देयक,निधी वाटप,निधी उपलब्ध,प्रस्ताव)</label>
+                <input type="text" id="reason" formControlName="reason" class="form-control">
+            </div>             
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                <label class ="form-label">कागदपत्रे संलग्न करा</label>
+                <i class="fas fa-upload" ></i>
+                <input type="file" id="document" formControlName="document" class="form-control" >   
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+            <label class ="form-label">पद</label>
+            <select  id="post" type="text" formControlName="post" class="form-control">
+            <option value="CEO">CEO</option>
+            <option value="DeputyCEO">Deputy CEO</option>
+            <option value="DepartmentHOD's">Department HOD's</option>
+            <option value="DepartmentOS's">Department OS's</option>
+            <option value=""></option>
+         </select>
+        </div>
+    </div>
+</div>
+      <button type="submit" class="btn btn-info">Transfer</button>&NonBreakingSpace;
+      <button type="submit" class="btn btn-dark">Back To</button>    
+    </form>
+  </div>
+  
+
+
+   

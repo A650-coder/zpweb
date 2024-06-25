@@ -1,0 +1,38 @@
+<div class="container">
+    <h4><b>नस्ती ट्रॅक करा</b></h4>
+    <form [formGroup]="trackForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="vibhag">विभाग</label>
+            <select id="vibhag" class="form-control" formControlName="vibhag">
+              <option value=""></option>
+              <option value="सामान्य प्रशासन विभाग">सामान्य प्रशासन विभाग</option>
+              <option value="अर्थ विभाग">अर्थ विभाग</option>
+              <option value="ग्रामपंचायत विभाग">ग्रामपंचायत विभाग</option>
+              <option value="शिक्षण (प्राथमिक) विभाग">शिक्षण (प्राथमिक) विभाग</option>
+              <option value="आरोग्य विभाग">आरोग्य विभाग</option>
+              <option value="समाज कल्याण विभाग">समाज कल्याण विभाग</option>
+              <option value="बांधकाम विभाग">बांधकाम विभाग</option>
+              <option value="ग्रामिण पाणी पुरवठा विभाग">ग्रामिण पाणी पुरवठा विभाग</option>
+              <option value="कृषी विभाग">कृषी विभाग</option>
+              <option value="पशुसंवर्धन विभाग">पशुसंवर्धन विभाग</option>
+              <option value="महिला व बाल विकास विभाग">महिला व बाल विकास विभाग</option>
+              <option value="शिक्षण (माध्यमिक) विभाग">शिक्षण (माध्यमिक) विभाग</option>
+              <option value="जिल्हा ग्रामिण विकास यंत्रणा">जिल्हा ग्रामिण विकास यंत्रणा</option>
+              <option value="पाणी व स्वच्छता विभाग">पाणी व स्वच्छता विभाग</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="fileno">नस्ती क्रमांक.</label>
+            <input type="text" id="fileno" class="form-control" formControlName="fileno" placeholder="निवडा">
+          </div>
+        </div>
+      </div>
+      <pre></pre>
+      <button type="submit" class="btn btn-success">Show</button>
+    </form>
+  </div>
+  

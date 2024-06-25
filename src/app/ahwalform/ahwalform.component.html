@@ -1,0 +1,64 @@
+
+<div class="container">
+    <h4><b>नस्तीचा अहवाल</b></h4>
+    <form [formGroup]="ahavalForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="karmachari">कर्मचारी</label>
+        <input type="text" id="karmachari" class="form-control" formControlName="karmachari" placeholder="कोणाकडून आले निवडा">
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+      <div class="form-group">
+        <label for="stheti">स्थिती</label>
+        <input type="text" id="stheti" class="form-control" formControlName="stheti" placeholder="
+        निवडा">
+      </div>
+    </div>
+  <div class="col">
+      <div class="form-group">
+        <label for="search">शोधा </label>
+        <input type="text" id="search" class="form-control" formControlName="search" (input)="onSearch()">
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+      <div class="form-group">
+        <label for="fromDate">From Date</label>
+        <input type="date" id="fromDate" class="form-control" formControlName="fromDate">
+      </div>
+  </div>
+  <div class="col">
+      <div class="form-group">
+        <label for="toDate">To Date</label>
+        <input type="date" id="toDate" class="form-control" formControlName="toDate">
+      </div>
+  </div>
+  </div>
+
+      <button type="submit" class="btn btn-success">Show</button> &nbsp;
+      <button type="submit"  class="btn btn-warning float-right">Export</button>
+    
+    <pre></pre>
+      <table class ="table table-bordered">
+        <thead>
+            <tr>
+                <th>अ.क्र</th>
+                <th>नस्ती.क्र</th>
+                <th>तारीख</th>
+                <th>सध्या स्थिती</th>
+                <th>प्रलंबित(Pending)</th>
+             </tr>
+        </thead>
+        </table>
+      <br>
+    </form>
+  </div>
+  
+
+
+   

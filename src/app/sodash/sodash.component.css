@@ -1,0 +1,147 @@
+/* Sidebar styles 
+*/
+.sidebar {
+    position: fixed;
+      /* margin-top: 30px; */
+      list-style-type: none;
+      padding: 0;
+      /* margin: 0; */
+      width: 210px;
+      background-color: #efeff1; /* Dark purple */
+      position: fixed;
+      min-height: auto;
+      height: 100%;
+      overflow: auto;
+      border-radius: 6px;
+    }
+    
+    .sidebar li {
+      text-align: center;
+      padding: 6px;
+    
+    }
+    
+    .sidebar li a {
+      display: block;
+      color: rgb(31, 30, 30);
+      text-decoration: none;
+      padding: 16px;
+    }
+    
+    .sidebar li a:hover {
+      background-color: #421c54; /* Slightly lighter purple */
+      color: #efeff1;
+      border-radius: 10px;
+    }
+    
+    .sidebar li a.active {
+      background-color: #6B5B95; /* Even lighter purple */
+      color: white;
+    }
+    
+    
+  .material-symbols-outlined {
+      font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+  }
+  .li-dropdown{
+    display:block;
+  }
+  
+  
+  .dropdown a {
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+  
+  
+.dashboard-container {
+  margin-top: 10px;
+  margin-right: 50px;
+  width: 80%;
+  border-color:1px solid black;
+  float: right;
+  background-color: #00bcd4;
+  padding: 3px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.dashboard-header {
+  margin-bottom: 20px;
+}
+
+.dashboard-body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dashboard-item {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.dashboard-item h3 {
+  margin: 0;
+}
+
+.dashboard-item p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 45%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.indicator {
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

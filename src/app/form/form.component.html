@@ -1,0 +1,90 @@
+<div class="container">
+    <h2><b>नस्ती तयार करा</b></h2>
+    <form [formGroup]="nastiForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col">
+          <div class="mt-3">
+            <label class="form-label">प्रारंभिक</label>
+            <select id="initial" formControlName="initial" class="form-control">
+              <option value="ED">PZP/ED/</option>
+              <option value="HD">PZP/HD/</option>
+              <option value="AD">PZP/AD/</option>
+              <option value="RDD">PZP/RDD/</option>
+              <option value="WRD">PZP/WRD/</option>
+              <option value="SDW">PZP/SDW/</option>
+              <option value="WCD">PZP/WCD/</option>
+              <option value="FD">PZP/FD/</option>
+              <option value="PDD">PZP/PDD/</option>
+              <option value="PWD">PZP/PWD/</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mt-3">
+            <label class="form-label">टेबल</label>
+            <input type="text" id="tableName" formControlName="tableName" class="form-control">
+          </div>
+        </div>
+        <div class="col">
+          <div class="mt-3">
+            <label class="form-label">नस्ती क्रमांक.</label>
+            <input type="text" id="fileno" formControlName="fileno" class="form-control" >
+          </div>
+        </div>
+        <div class="col">
+          <div class="mt-3">
+            <label class="form-label">तारीख</label>
+            <input type="date" id="date" formControlName="date" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="mt-3">
+            <label class="form-label">विषय</label>
+            <input type="text" id="subject" formControlName="subject" class="form-control">
+          </div>
+        </div>
+        <div class="col">
+          <div class="mt-3">
+            <label class="form-label">प्रकार</label>
+            <select id="type" formControlName="type" class="form-control">
+              <option value="सामान्य">सामान्य</option>
+              <option value="तत्काळ">तत्काळ</option>
+              <option value="अतितात्काळ">अतितात्काळ</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="mt-3">
+        <label class="form-label">नस्ती सादर करण्याचे कारण (उदा. तांत्रिक मान्यता, देयक, निधी वाटप, निधी उपलब्ध, प्रस्ताव)</label>
+        <input type="text" id="reason" formControlName="reason" class="form-control">
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="mt-3">
+            <label class="form-label">कागदपत्रे संलग्न करा</label>
+            <i class="fas fa-upload"></i>
+            <input type="file" id="document" formControlName="document" class="form-control" (change)="onFileChange($event)">
+            <!-- <input type="file" id="document" formControlName="document" class="form-control"> -->
+          </div>
+        </div>
+        <div class="col">
+          <div class="mt-3">
+            <label class="form-label">जतन प्रकार</label>
+            <select id="storageType" formControlName="storageType" class="form-control">
+              <option value="क">क</option>
+              <option value="ब">ब</option>
+            <option value="अ">अ</option>
+            <option value="अ">अ-१ </option>
+            <option value="अ">क-१ </option>
+              </select>
+          </div>
+        </div>
+      </div>
+      <div class="mt-3">
+        <input type="submit" class="btn-primary" value="नोंदणी करा">
+      </div>
+    </form>
+  </div>
+  

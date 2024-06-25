@@ -1,0 +1,68 @@
+
+<div class="dashboard">
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h2>एकूण नसती: {{ total }}</h2>
+        </div>
+        <div class="dashboard-body">
+            <div class="dashboard-item">
+                <h3>Accepted</h3>
+                <p>{{ accepted }}</p>
+            </div>
+            <div class="dashboard-item">
+                <h3>Pending</h3>
+                <p>{{ pending }}</p>
+            </div>
+            <div class="dashboard-item">
+                <h3>Resolved</h3>
+                <p>{{ resolved }}</p>
+            </div>
+            <div class="dashboard-item">
+                <h3>Rejected</h3>
+                <p>{{ rejected }}</p>
+            </div>
+        </div>
+    </div>
+    <!-- Add other dashboard components here -->
+
+
+    <div class="ds-b">
+        <div class="card">
+            <h2>Top 10 Employees - Pending (पत्र) </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let employee of pendingPatra">
+                        <td>{{employee.name}}</td>
+                        <td>{{employee.department}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Top 10 Employees - Pending (नस्ती)  </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let employee of pendingNasti">
+                        <td>{{employee.name}}</td>
+                        <td>{{employee.department}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>

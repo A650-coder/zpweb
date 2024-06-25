@@ -1,0 +1,30 @@
+<div *ngIf="userRole === 'hod'">
+    <ul class="sidebar">
+      <li>
+        <a routerLink="/admindash" routerLinkActive="active">
+          <span class="material-symbols-outlined">dashboard</span>Dashboard
+        </a>
+      </li>
+      <li>
+        <a routerLink="/ahwalform" routerLinkActive="active">
+          <span class="material-symbols-outlined">description</span>अहवल
+        </a>
+      </li>
+      <li>
+        <a routerLink="/form" routerLinkActive="active">
+          <span class="material-symbols-outlined">description</span>नसती तयार करा
+        </a>
+      </li>
+      <li>
+        <a routerLink="/changpss" routerLinkActive="active">
+          <span class="material-symbols-outlined">password</span>Change Password
+        </a>
+      </li>
+      <li>
+        <a (click)="logout()">
+          <span class="material-symbols-outlined">power_settings_new</span>Logout
+        </a>
+      </li>
+    </ul>
+  </div>
+  

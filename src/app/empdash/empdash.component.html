@@ -1,0 +1,54 @@
+
+<div class="dashboard">
+  <div class="dashboard-container">
+    <div class="dashboard-header">
+      <h2>एकूण नसती: {{ total }}</h2>
+    </div>
+    <div class="dashboard-body">
+      <div class="dashboard-item">
+        <h3>Accepted</h3>
+        <p>{{ accepted }}</p>
+      </div>
+      <div class="dashboard-item">
+        <h3>Pending</h3>
+        <p>{{ pending }}</p>
+      </div>
+      <div class="dashboard-item">
+        <h3>Resolved</h3>
+        <p>{{ resolved }}</p>
+      </div>
+      <div class="dashboard-item">
+        <h3>Rejected</h3>
+        <p>{{ rejected }}</p>
+      </div>
+    </div>
+  </div>
+  <!-- Add other dashboard components here -->
+</div>
+
+
+
+<div *ngIf="userRole === 'emp'">
+    <ul class="sidebar">
+      <li>
+        <a routerLink="/admindash" routerLinkActive="active">
+          <span class="material-symbols-outlined">dashboard</span>Dashboard
+        </a>
+      </li>
+      <li>
+        <a routerLink="/form" routerLinkActive="active">
+          <span class="material-symbols-outlined">description</span>नसती तयार करा
+        </a>
+      </li>
+      <li>
+        <a routerLink="/ahwalform" routerLinkActive="active">
+          <span class="material-symbols-outlined">description</span>अहवल
+        </a>
+      </li>
+      <li>
+        <a (click)="logout()">
+          <span class="material-symbols-outlined">power_settings_new</span>Logout
+        </a>
+      </li>
+    </ul>
+  </div>
